@@ -1,0 +1,9 @@
+name: "Charlie's Repair"
+description: "Tractor splitting made easy from 45+ years of experience."
+
+url: "http://charliesrepair.com"
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
+exclude: ['*.sublime-*', drafts, templates, build, s3_website.xml, .gitignore, .dropbox, .DS_Store]
