@@ -1,0 +1,28 @@
+{% include header.html %}
+
+<div class="row">
+    <div class="col-md-9">
+        <h1 class="page-header">{{ page.title }}</h1>
+        {{ content }}
+    </div>
+    <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="nav-ec">
+                <a href="/electric-conversion/">
+                    <strong>Electric Coversion</strong>
+                </a>
+            </li>
+            <li class="nav-ec-hitachi"><a href="/electric-conversion/hitachi-mitsubishi-alternators/">Hitachi/Mitsubishi Alternators</a>
+            </li>
+            <li class="nav-ec-abc"><a href="/electric-conversion/abc-alternator/">ABC alternator</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>
+{% include footer.html %}
