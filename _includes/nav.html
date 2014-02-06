@@ -1,34 +1,54 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">{{ site.name }}</a>
+<div class="row">
+    <div class="col-md-6">
+        <h1>{{ site.name }}</h1>
+        <p>{{ site.description }}</p>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+    <div class="col-md-6">
+        <ul class="nav nav-pills pull-right" role="navigation">
+            <li class="nav-home"><a href="/">Home</a>
+            </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stands <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li class="nav-5-speed"><a href="/5-speed-stand/">5 speed stand</a></li>
-                    <li class="nav-front-stand"><a href="/front-splitting-stand/">Front splitting stand</a></li>
-                    <li class="nav-rear-stand"><a href="/rear-housing-stand/">Rear housing stand</a></li>
-                    <li class="nav-ta-handler"><a href="/ta-handler/">TA handler</a></li>
-                    <li class="nav-mini-stand"><a href="/mini-stand/">Mini stand</a></li>
+                    <li class="nav-stands">
+                        <a href="/stands/">
+                            <strong>Stands</strong>
+                        </a>
+                    </li>
+                    <li class="nav-5-speed"><a href="/stands/5-speed-stand/">5 speed stand</a>
+                    </li>
+                    <li class="nav-front-stand"><a href="/stands/front-splitting-stand/">Front splitting stand</a>
+                    </li>
+                    <li class="nav-rear-stand"><a href="/stands/rear-housing-stand/">Rear housing stand</a>
+                    </li>
+                    <li class="nav-ta-handler"><a href="/stands/ta-handler/">TA handler</a>
+                    </li>
+                    <li class="nav-mini-stand"><a href="/stands/mini-stand/">Mini stand</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-ec">
+                        <a href="/electric-conversion/">
+                            <strong>Electric Coversion</strong>
+                        </a>
+                    </li>
+                    <li class="nav-ec-hitachi"><a href="/electric-conversion/hitachi-mitsubishi-alternators/">Hitachi/Mitsubishi Alternators</a>
+                    </li>
+                    <li class="nav-ec-abc"><a href="/electric-conversion/abc-alternator/">ABC alternator</a>
+                    </li>
                 </ul>
             </li>
-            <li class="nav-electric"><a href="/electric-conversion/">Electric conversion</a></li>
-            <li class="nav-wiring"><a href="/wiring-diagrams/">Wiring diagrams</a></li>
-            <li class="nav-about"><a href="/about/">About</a></li>
-            <li class="nav-contact"><a href="/contact/">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="nav-wiring"><a href="/electric-conversion/wiring-diagrams/">Wiring diagrams</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-contact"><a href="/contact/">Contact</a>
+            </li>
+            <li class="nav-about"><a href="/about/">About</a>
+            </li>
         </ul>
-
     </div>
-    <!-- /.navbar-collapse -->
-</nav>
+</div>
