@@ -26,7 +26,13 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+        helpers : {
+            title: {
+                type: 'inside'
+            }
+        }
+    });
     $('.nav-ec').addClass("active");
 });
 </script>
