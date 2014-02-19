@@ -7,15 +7,19 @@
     </div>
     <div class="col-md-3">
         <ul class="nav nav-pills nav-stacked">
-            <li class="nav-ec">
+            <li class="nav-ec-index">
                 <a href="/electric-conversion/">
                     <strong>Electric Coversion</strong>
                 </a>
             </li>
-            <li class="nav-ec-hitachi"><a href="/electric-conversion/hitachi-mitsubishi-alternators/">Hitachi/Mitsubishi Alternators</a>
-            </li>
-            <li class="nav-ec-abc"><a href="/electric-conversion/abc-alternator/">ABC alternator</a>
-            </li>
+            <li class="nav-ec-delco"><a href="/electric-conversion/delco-alternator/">Delco alternator kits</a></li>
+            <li class="nav-ec-hitachi"><a href="/electric-conversion/hitachi-mitsubishi-alternators/">Hitachi/Mitsubishi alternator kits</a></li>
+            <li class="nav-ec-f-abc"><a href="/electric-conversion/farmall-abc-alternator/">Farmall ABC alternator kits</a></li>
+            <li class="nav-ec-f-cub"><a href="/electric-conversion/farmall-cub-alternator/">Farmall CUB alternator kits</a></li>
+            <li class="nav-ec-f-h"><a href="/electric-conversion/farmall-h-alternator/">Farmall H alternator kits</a></li>
+            <li class="nav-ec-f-m"><a href="/electric-conversion/farmall-m-alternator/">Farmall M alternator kits</a></li>
+            <li class="nav-ec-f-300"><a href="/electric-conversion/farmall-300-alternator/">Farmall 300 alternator kits</a></li>
+            <li class="nav-wiring"><a href="/electric-conversion/wiring-diagrams/">All tractor wiring diagrams</a></li>
         </ul>
     </div>
 </div>
@@ -23,6 +27,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $(".fancybox").fancybox();
+    $('.nav-ec').addClass("active");
 });
 </script>
 {% include footer.html %}
