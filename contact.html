@@ -1,90 +1,118 @@
 --- 
 title: "Contact Charlie" 
-layout: pages 
+layout: default 
 pageClass: .nav-contact 
 ---
 
-<div class="row">
-    <div class="col-md-9">
-        <div class="row">
-            <div class="col-md-12">
-                <form class="jotform-form form-horizontal" role="form" action="http://submit.jotform.us/submit/40368238608156/" method="post" name="form_40368238608156" id="40368238608156" accept-charset="utf-8">
-                    <input type="hidden" name="formID" value="40368238608156" />
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" id="sublabel_first" for="first_15">First Name</label>
-                        <div class="col-sm-10">
-                            <input class="form-control validate[required]" type="text" name="q15_yourName[first]" id="first_15" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="last_15" id="sublabel_last">Last Name</label>
-                        <div class="col-sm-10">
-                            <input class="form-control validate[required]" type="text" name="q15_yourName[last]" id="last_15" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" id="label_16" for="input_16">Email Address</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control validate[Email]" id="input_16" name="q16_yourEmail16" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" id="label_24" for="input_24">Phone Number</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" data-type="input-textbox" id="input_24" name="q24_phoneNumber" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" id="label_17" for="input_17">Your Message</label>
-                        <div class="col-sm-10">
-                            <textarea id="input_17" class="form-control validate[required]" name="q17_yourMessage" rows="5"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" id="label_23" for="input_23">Prefered Contact?</label>
-                        <div class="col-sm-10">
-                            <div class="radio-inline">
-                                <label>
-                                    <input type="radio" class="form-radio validate[required]" id="input_23_0" name="q23_preferedContact23" value="E-mail" />Email</label>
+    <section class="post-wrapper-top dm-shadow">
+        <div id="responsive_map"></div>
+    </section><!-- end post-wrapper-top -->
+    
+    <section id="contact_page" class="section-single">        
+    <div class="container">
+        <div class="fullwidth-post-wrapper col-lg-12">     
+           <div class="general_wrapper clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-12 clearfix">
+                    <div class="widget-title"><h3>Cotact Details</h3></div>
+                    <div class="contact_details" data-effect="helix">
+                        <div class="custom-box" data-effect="slide-top">
+                            <div class="contact_icons">
+                                <i class="fa fa-envelope"></i>
                             </div>
-                            <div class="radio-inline">
-                                <label>
-                                    <input type="radio" class="form-radio validate[required]" id="input_23_1" name="q23_preferedContact23" value="Phone" />Phone</label>
+                            <div class="custom-box-info">
+                                <p><a href="mailto:charlieu@gofast.am">charlieu@gofast.am</a></p>
                             </div>
+                        </div><!-- custom-box -->
+                        <div class="custom-box" data-effect="slide-top">
+                            <div class="contact_icons">
+                                <i class="fa fa-mobile-phone"></i>
+                            </div>
+                            <div class="custom-box-info">
+                                <p><a href="tel:(507) 438-8172">(507) 438-8172</a></p>
+                            </div>
+                        </div><!-- custom-box -->
+                        <div class="custom-box" data-effect="slide-top">
+                            <div class="contact_icons">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <div class="custom-box-info">
+                                <p>22195 Hwy 56, Austin, MN 55912</p>
+                            </div>
+                        </div><!-- custom-box -->
+                    </div><!-- end contact_details -->
+                </div><!-- end col-lg-3 -->
+                
+                <div class="col-lg-9 col-md-9 col-sm-12 clearfix">
+                    <div class="widget-title"><h3>Contact Form</h3></div>
+                    <div id="message"></div>
+                    <form id="contact" action="contact.php" name="contactform" method="post">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name"> 
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email"> 
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button id="input_14" type="submit" class="btn btn-primary">Submit</button>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject"> 
                         </div>
-                    </div>
-                    <div style="display:none">
-                        Should be Empty:
-                        <input type="text" name="website" value="" />
-                    </div>
+                        <div class="clearfix"></div>                   
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your Message ..."></textarea>
+                        </div>   
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="pull-left">
+                                <label for="verify">3+1=?</label> <input name="verify" type="text" id="verify" value="" class="form-control form-verif" />
+                            </div>
+                            <div class="pull-right">
+                                <input type="submit" value="SEND" id="submit" class="btn btn-primary small">
+                            </div>  
+                        </div>
+                    </form>
+                </div><!-- end col-lg-6 -->
+            </div><!-- end general_wrapper -->
+    
+              
+            </div><!-- fullwidth-post-wrapper -->
+        </div><!-- end container --> 
+    </section><!-- end section-single -->
 
-                    <input type="hidden" id="simple_spc" name="simple_spc" value="40368238608156" />
-                    <script type="text/javascript">
-                    	document.getElementById("si" + "mple" + "_spc").value = "40368238608156-40368238608156";
-                    </script>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-3">
-        <address>
-                <strong>Charlie's Repair</strong><br />
-                22195 Hwy 56<br />
-                Austin, MN 55912<br />
-                <abbr title="Phone">P:</abbr> <a href="tel:(507) 438-8172">(507) 438-8172</a>
-        </address>
-
-        <address>
-            <strong>Email</strong><br />
-            <a href="mailto:&#099;&#104;&#097;&#114;&#108;&#105;&#101;&#117;&#064;&#103;&#111;&#102;&#097;&#115;&#116;&#046;&#097;&#109;">&#099;&#104;&#097;&#114;&#108;&#105;&#101;&#117;&#064;&#103;&#111;&#102;&#097;&#115;&#116;&#046;&#097;&#109;</a>
-        </address>
-    </div>
-</div>
-
-<script src="http://cdn.jotfor.ms/static/jotform.js?3.2.503" type="text/javascript"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="/js/jquery.gmap.min.js"></script>
+    <script>
+    // MAP
+   jQuery(document).ready(function($) {
+        $("#responsive_map").gMap({
+             maptype: google.maps.MapTypeId.ROADMAP, 
+             zoom: 14, 
+             markers: [{
+                 latitude: 43.676900, 
+                 longitude: -92.869136, 
+                 html: "<img src='/images/logo.png' width='69' height='27'><br/>22195 Hwy 56, Austin, MN 55912", 
+                 popup: true, 
+                 flat: true, 
+                 icon: { 
+                     image: "/images/tunnel.png", 
+                     iconsize: [32, 37], 
+                     iconanchor: [15, 30], 
+                     shadow: "/images/icon-shadow.png", 
+                     shadowsize: [32, 37], 
+                     shadowanchor: null}
+                    } 
+                ], 
+             panControl: true, 
+             zoomControl: true, 
+             mapTypeControl: true, 
+             scaleControl: true, 
+             streetViewControl: true, 
+             scrollwheel: false, 
+             styles: [ { "stylers": [ { "hue": "#007ACC" }, { "gamma": 0 } ] } ], 
+             onComplete: function() {
+                 // Resize and re-center the map on window resize event
+                 var gmap = $("#responsive_map").data('gmap').gmap;
+                 window.onresize = function(){
+                     google.maps.event.trigger(gmap, 'resize');
+                     $("#responsive_map").gMap('fixAfterResize');
+                 };
+            }
+        });
+    });
+    </script>

@@ -1,17 +1,54 @@
+    <section class="section-copyright dm-shadow text-center">
+        <div class="container">
+            <div class="back-to-top clearfix">
+                <span><span class="dmtop"><i class="fa fa-arrow-up"></i></span></span>
+            </div>
+            <p>Copyright © 2014 Designed by : <a href="http://mikewills.me/">Mike Wills</a>. All Rights Reserved.</p>
+        </div><!-- end container -->
+    </section><!-- end section-copyright -->
+      
+</div><!-- wrapper -->
 
-    <hr>
-
-    <footer>
-        <p>&copy; Charlie's Repair 2014 | Site created by <a href="http://mikewills.me/">Mike Wills</a>
-        </p>
-    </footer>
-
-    </div>
-    <!-- /container -->
-
-    <!-- Le javascript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/fhmm.js"></script> 
+    <script src="/js/jquery.fitvids.js"></script>    
+    <script src="/js/jquery.unveilEffects.js"></script>  
+    <script src="/js/retina-1.1.0.js"></script>
+    <script src="/js/jquery.simple-text-rotator.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <!-- LayerSlider script files -->
+    <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
+    <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery("#layerslider").layerSlider({
+            pauseOnHover: false,
+            autoPlayVideos: false,
+            responsive: false,
+            responsiveUnder: 1280,
+            layersContainer: 1280,
+            skin: 'v5',
+            skinsPath: 'layerslider/skins/'
+        });
+    </script>
+
+    <!-- Owl Carousel script files -->
+    <script src="/js/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#owl-portfolio").owlCarousel({
+            items : 4,
+            lazyLoad : true,
+            pagination : false,
+            navigation : true
+        });
+        // Set the active page
+        $('{{ page.pageClass }}').addClass("active");
+    });
+    </script>
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27397562-1']);
@@ -26,11 +63,6 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('{{ page.pageClass }}').addClass("active");
-    });
     </script>
 </body>
 </html>
