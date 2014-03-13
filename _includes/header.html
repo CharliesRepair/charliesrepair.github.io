@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="utf-8">
-    <title>{{ site.name }} - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="google-site-verification" content="mW-G0F-Q-BGz36Fhrq8e_BbQOqmLhQM9_mI8yau0R5E" />
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-    body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    </style>
+    <title>{{ site.name }} - {{ page.title }}</title>
 
-    <!-- Scripts -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <!-- Style CSS -->
+    <link href="/style.css" rel="stylesheet">
+    <link href="/css/colors.css" rel="stylesheet">
 
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Royal Slider -->
+    <link href="/royalslider/royalslider.css" rel="stylesheet">
+    <link href="/royalslider/skins/default-inverted/rs-default-inverted.css" rel="stylesheet">
 
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <!-- Layer Slider -->
+    <link rel="stylesheet" href="/layerslider/css/layerslider.css" type="text/css">
 
-    <link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/ico/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/ico/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/ico/apple-touch-icon-144x144.png">
+    
+    <script src="/js/jquery.js"></script>
 </head>
 
 <body>
-
-    <div class="container">
-
-    {% include nav.html %}
+    <div id="wrapper">
+        {% include nav.html %}
