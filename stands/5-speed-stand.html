@@ -37,15 +37,15 @@ pageClass: .nav-stands
                         </a>
                     </div>
                     <div class="thumbnails">
-                        <a class="first" rel="prettyPhoto[product-gallery]" title="" href="/demos/01_shop.png">
+                        <a class="first" rel="prettyPhoto[product-gallery]" title="" href="/img/5speed/30.jpg">
                             <div class="entry">
-                                <img class="img-thumbnail" src="/demos/01_shop.png" alt="">
+                                <img class="img-thumbnail" src="/img/5speed/30_600x600.jpg" alt="">
                                 <span class="magnifier"></span>
                             </div>
                         </a>
-                        <a rel="prettyPhoto[product-gallery]" title="" href="/demos/02_shop.png">
+                        <a rel="prettyPhoto[product-gallery]" title="" href="/img/5speed/40.jpg">
                             <div class="entry">
-                                <img class="img-thumbnail" src="/demos/02_shop.png" alt="">
+                                <img class="img-thumbnail" src="/img/5speed/40_600x600.jpg" alt="">
                                 <span class="magnifier"></span>
                             </div>
                         </a>
@@ -64,7 +64,7 @@ pageClass: .nav-stands
                         <span class="price-new">{{ site.data.prices.5-speed-stand }}</span>
                     </div>
                     <br>
-                    <a class="btn btn-primary" href="#"><i class="fa fa-envelope-o"></i> CONTACT ME TO PURCHASE</a>
+                    <a class="btn btn-primary" href="/contact/"><i class="fa fa-envelope-o"></i> CONTACT ME TO PURCHASE</a>
 
                     <div class="clearfix"></div>
                 </div>
@@ -151,6 +151,9 @@ $(document).ready(function() {
         pagination: false,
         navigation: true
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto();
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        show_title: true,
+        social_tools: false
+    });
 });
 </script>
