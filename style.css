@@ -1411,7 +1411,7 @@
 		font-size: 28px;
 		font-weight: normal;
 		margin-bottom: 0;
-		overflow: auto;
+		/*overflow: auto;*/
 		padding: 0;
 	}
 	
