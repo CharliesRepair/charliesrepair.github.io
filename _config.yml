@@ -5,5 +5,5 @@ url: "http://charliesrepair.com"
 
 markdown: rdiscount
 permalink: pretty
-highlighter: true
+highlighter: pygments
 exclude: ['*.sublime-*', drafts, templates, build, s3_website.xml, .gitignore, .dropbox, .DS_Store, README.*, contact.php]
