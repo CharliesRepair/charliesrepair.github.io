@@ -4,3 +4,6 @@ _site/
 .dropbox
 build/
 s3_website.yml
+*.bbprojectdata
+*.bbprojectsettings
+*.bbprojectd/*
