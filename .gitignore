@@ -7,3 +7,4 @@ s3_website.yml
 *.bbprojectdata
 *.bbprojectsettings
 *.bbprojectd/*
+serve/
