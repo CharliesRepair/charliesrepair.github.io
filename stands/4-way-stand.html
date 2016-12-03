@@ -1,16 +1,18 @@
 ---
-title: "4 Way Stand" 
-layout: default 
-pageClass: .nav-stands 
+title: "4 Way Stand"
+layout: default
+pageClass: .nav-stands
 ---
 
 <section class="post-wrapper-top dm-shadow">
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="breadcrumb">
-                <li><a href="/">Home</a>
+                <li>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="/stands/">Splitting Stands</a>
+                <li>
+                    <a href="/stands/">Splitting Stands</a>
                 </li>
                 <li>{{ page.title }}</li>
             </ul>
@@ -22,7 +24,6 @@ pageClass: .nav-stands
     <!-- end container -->
 </section>
 <!-- end post-wrapper-top -->
-
 <section class="section-single">
     <div class="container">
         <div class="single-post-wrapper col-lg-9 col-md-9 col-sm-12 clearfix">
@@ -81,17 +82,16 @@ pageClass: .nav-stands
                         <h3>{{ page.title }}</h3>
                         <hr>
                     </div>
-
-                    <p>The 4-way jack stand is designed to use a hydraulic jack to raise and lower the tractors' side front
+                    <p>
+                        The 4-way jack stand is designed to use a hydraulic jack to raise and lower the tractors' side front
                         axles, rear axles, and clutch housings. Holes are provided for a pin to safely hold the tractor at
-                        a desired position. The 4-way stand has a operating range of 20-30 inches. <em>Note: Jack not included.</em></p>
-
+                        a desired position. The 4-way stand has a operating range of 20-30 inches. <em>Note: Jack not included.</em>
+                    </p>
                     <div class="price">
                         <span class="price-new">{{ site.data.prices.four-way-jack-stand }}</span>
                     </div>
                     <br>
                     <a class="btn btn-primary" href="/contact/"><i class="fa fa-envelope-o"></i> CONTACT ME TO PURCHASE</a>
-
                     <div class="clearfix"></div>
                 </div>
                 <!-- end col-lg-4 -->
@@ -99,28 +99,25 @@ pageClass: .nav-stands
             <!-- end row -->
         </div>
         <!-- single-post-wrapper -->
-
     </div>
     <!-- end container -->
 </section>
 <!-- end section-single -->
-
-
 <!-- Owl Carousel script files -->
 <script src="/js/owl.carousel.js"></script>
 <script src="/js/jquery.prettyPhoto.js"></script>
 <script>
-    $(document).ready(function() {
-    $("#owl-portfolio").owlCarousel({
-        items: 3,
-        lazyLoad: true,
-        pagination: false,
-        navigation: true
+    $(document).ready(function () {
+        $("#owl-portfolio").owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            pagination: false,
+            navigation: true
+        });
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            show_title: true,
+            social_tools: false
+        });
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        show_title: true,
-        social_tools: false
-    });
-});
 
 </script>

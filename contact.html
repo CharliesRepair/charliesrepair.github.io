@@ -4,14 +4,13 @@ layout: default
 pageClass: .nav-contact
 ---
 
-    <section class="post-wrapper-top dm-shadow">
-        <div id="responsive_map"></div>
-    </section><!-- end post-wrapper-top -->
-
-    <section id="contact_page" class="section-single">
+<section class="post-wrapper-top dm-shadow">
+    <div id="responsive_map"></div>
+</section><!-- end post-wrapper-top -->
+<section id="contact_page" class="section-single">
     <div class="container">
         <div class="fullwidth-post-wrapper col-lg-12">
-           <div class="general_wrapper clearfix">
+            <div class="general_wrapper clearfix">
                 <div class="col-lg-3 col-md-3 col-sm-12 clearfix">
                     <div class="widget-title"><h3>Contact Details</h3></div>
                     <div class="contact_details" data-effect="helix">
@@ -41,7 +40,6 @@ pageClass: .nav-contact
                         </div><!-- custom-box -->
                     </div><!-- end contact_details -->
                 </div><!-- end col-lg-3 -->
-
                 <div class="col-lg-9 col-md-9 col-sm-12 clearfix">
                     <div class="widget-title"><h3>Contact Form</h3></div>
                     <div id="message"></div>
@@ -70,49 +68,48 @@ pageClass: .nav-contact
                 </div><!-- end col-lg-6 -->
             </div><!-- end general_wrapper -->
 
-
-            </div><!-- fullwidth-post-wrapper -->
-        </div><!-- end container -->
-    </section><!-- end section-single -->
-
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAzIWd_hpohIJZCvjyRRkfxppK-TpkzTc0"></script>
-    <script src="/js/jquery.gmap.min.js"></script>
-    <script>
+        </div><!-- fullwidth-post-wrapper -->
+    </div><!-- end container -->
+</section><!-- end section-single -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAzIWd_hpohIJZCvjyRRkfxppK-TpkzTc0"></script>
+<script src="/js/jquery.gmap.min.js"></script>
+<script>
     // MAP
-   jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         $("#responsive_map").gMap({
-             maptype: google.maps.MapTypeId.ROADMAP,
-             zoom: 14,
-             markers: [{
-                 latitude: 43.6737813,
-                 longitude: -92.9091895,
-                 html: "<img src='/img/logo.png' width='69' height='27'><br/>56989 220th St., Austin, MN 55912",
-                 popup: true,
-                 flat: true,
-                 icon: {
-                     image: "/images/tunnel.png",
-                     iconsize: [32, 37],
-                     iconanchor: [15, 30],
-                     shadow: "/images/icon-shadow.png",
-                     shadowsize: [32, 37],
-                     shadowanchor: null}
-                    }
-                ],
-             panControl: true,
-             zoomControl: true,
-             mapTypeControl: true,
-             scaleControl: true,
-             streetViewControl: true,
-             scrollwheel: false,
-             styles: [ { "stylers": [ { "hue": "#007ACC" }, { "gamma": 0 } ] } ],
-             onComplete: function() {
-                 // Resize and re-center the map on window resize event
-                 var gmap = $("#responsive_map").data('gmap').gmap;
-                 window.onresize = function(){
-                     google.maps.event.trigger(gmap, 'resize');
-                     $("#responsive_map").gMap('fixAfterResize');
-                 };
+            maptype: google.maps.MapTypeId.ROADMAP,
+            zoom: 14,
+            markers: [{
+                latitude: 43.6737813,
+                longitude: -92.9091895,
+                html: "<img src='/img/logo.png' width='69' height='27'><br/>56989 220th St., Austin, MN 55912",
+                popup: true,
+                flat: true,
+                icon: {
+                    image: "/images/tunnel.png",
+                    iconsize: [32, 37],
+                    iconanchor: [15, 30],
+                    shadow: "/images/icon-shadow.png",
+                    shadowsize: [32, 37],
+                    shadowanchor: null
+                }
+            }
+            ],
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: true,
+            streetViewControl: true,
+            scrollwheel: false,
+            styles: [{ "stylers": [{ "hue": "#007ACC" }, { "gamma": 0 }] }],
+            onComplete: function () {
+                // Resize and re-center the map on window resize event
+                var gmap = $("#responsive_map").data('gmap').gmap;
+                window.onresize = function () {
+                    google.maps.event.trigger(gmap, 'resize');
+                    $("#responsive_map").gMap('fixAfterResize');
+                };
             }
         });
     });
-    </script>
+</script>

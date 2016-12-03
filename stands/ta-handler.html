@@ -8,9 +8,11 @@ pageClass: .nav-stands
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="breadcrumb">
-                <li><a href="/">Home</a>
+                <li>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="/stands/">Splitting Stands</a>
+                <li>
+                    <a href="/stands/">Splitting Stands</a>
                 </li>
                 <li>{{ page.title }}</li>
             </ul>
@@ -22,7 +24,6 @@ pageClass: .nav-stands
     <!-- end container -->
 </section>
 <!-- end post-wrapper-top -->
-
 <section class="section-single">
     <div class="container">
         <div class="single-post-wrapper col-lg-9 col-md-9 col-sm-12 clearfix">
@@ -87,42 +88,37 @@ pageClass: .nav-stands
                         <h3>{{ page.title }}</h3>
                         <hr>
                     </div>
-
                     <p>This stand attaches with two bolts after the tractor has been split. The TA housing easily rolls out from under the tractor on the TA handler's 4 inch casters. The transmission gears and shafts can be removed with the housing in the horizontal position. The TA handler allows the TA housing to be stood up on end, vertically. With the aid of an overhead hoist, the TA assemble can be replaced. Works on 06 to 86 series.</p>
-
                     <div class="price">
                         <span class="price-new">{{ site.data.prices.ta-handler }}</span>
                     </div>
                     <br>
                     <a class="btn btn-primary" href="/contact/"><i class="fa fa-envelope-o"></i> CONTACT ME TO PURCHASE</a>
-
                     <div class="clearfix"></div>
                 </div>
-                <!-- end col-lg-4 -->            </div>
+                <!-- end col-lg-4 -->
+            </div>
             <!-- end row -->
         </div>
         <!-- single-post-wrapper -->
-
     </div>
     <!-- end container -->
 </section>
 <!-- end section-single -->
-
-
 <!-- Owl Carousel script files -->
 <script src="/js/owl.carousel.js"></script>
 <script src="/js/jquery.prettyPhoto.js"></script>
 <script>
-$(document).ready(function() {
-    $("#owl-portfolio").owlCarousel({
-        items: 3,
-        lazyLoad: true,
-        pagination: false,
-        navigation: true
+    $(document).ready(function () {
+        $("#owl-portfolio").owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            pagination: false,
+            navigation: true
+        });
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            show_title: true,
+            social_tools: false
+        });
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        show_title: true,
-        social_tools: false
-    });
-});
 </script>

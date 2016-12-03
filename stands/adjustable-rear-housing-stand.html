@@ -1,16 +1,18 @@
---- 
-title: "Adjustable Rear Housing Stand" 
-layout: default 
-pageClass: .nav-stands 
+---
+title: "Adjustable Rear Housing Stand"
+layout: default
+pageClass: .nav-stands
 ---
 
 <section class="post-wrapper-top dm-shadow">
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="breadcrumb">
-                <li><a href="/">Home</a>
+                <li>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="/stands/">Splitting Stands</a>
+                <li>
+                    <a href="/stands/">Splitting Stands</a>
                 </li>
                 <li>{{ page.title }}</li>
             </ul>
@@ -22,7 +24,6 @@ pageClass: .nav-stands
     <!-- end container -->
 </section>
 <!-- end post-wrapper-top -->
-
 <section class="section-single">
     <div class="container">
         <div class="single-post-wrapper col-lg-9 col-md-9 col-sm-12 clearfix">
@@ -57,19 +58,18 @@ pageClass: .nav-stands
                         <h3>{{ page.title }}</h3>
                         <hr>
                     </div>
-
-                    <p>This stand provides support of the rear frame when making a rear split or when removal of wheels and
+                    <p>
+                        This stand provides support of the rear frame when making a rear split or when removal of wheels and
                         axle carriers are required. The adjustable version of rear housing stand was designed to fit the
                         larger rear housing found on the larger John Deere tractors (46xx 47xx 48xx &amp; 49xx series of
                         tractors). The front leg of this stand telescopes forward an additional 25 inches this helps to make
-                        this stand much more versatile. When not in use the stand stores on end for easy storage.</p>
-
+                        this stand much more versatile. When not in use the stand stores on end for easy storage.
+                    </p>
                     <div class="price">
                         <span class="price-new">{{ site.data.prices.adj-rear-housing-stand }}</span>
                     </div>
                     <br>
                     <a class="btn btn-primary" href="/contact/"><i class="fa fa-envelope-o"></i> CONTACT ME TO PURCHASE</a>
-
                     <div class="clearfix"></div>
                 </div>
                 <!-- end col-lg-4 -->
@@ -77,28 +77,25 @@ pageClass: .nav-stands
             <!-- end row -->
         </div>
         <!-- single-post-wrapper -->
-
     </div>
     <!-- end container -->
 </section>
 <!-- end section-single -->
-
-
 <!-- Owl Carousel script files -->
 <script src="/js/owl.carousel.js"></script>
 <script src="/js/jquery.prettyPhoto.js"></script>
 <script>
-    $(document).ready(function() {
-    $("#owl-portfolio").owlCarousel({
-        items: 3,
-        lazyLoad: true,
-        pagination: false,
-        navigation: true
+    $(document).ready(function () {
+        $("#owl-portfolio").owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            pagination: false,
+            navigation: true
+        });
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            show_title: true,
+            social_tools: false
+        });
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        show_title: true,
-        social_tools: false
-    });
-});
 
 </script>

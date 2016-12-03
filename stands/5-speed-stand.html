@@ -8,9 +8,11 @@ pageClass: .nav-stands
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="breadcrumb">
-                <li><a href="/">Home</a>
+                <li>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="/stands/">Splitting Stands</a>
+                <li>
+                    <a href="/stands/">Splitting Stands</a>
                 </li>
                 <li>{{ page.title }}</li>
             </ul>
@@ -72,22 +74,20 @@ pageClass: .nav-stands
     <!-- end container -->
 </section>
 <!-- end section-single -->
-
-
 <!-- Owl Carousel script files -->
 <script src="/js/owl.carousel.js"></script>
 <script src="/js/jquery.prettyPhoto.js"></script>
 <script>
-$(document).ready(function() {
-    $("#owl-portfolio").owlCarousel({
-        items: 3,
-        lazyLoad: true,
-        pagination: false,
-        navigation: true
+    $(document).ready(function () {
+        $("#owl-portfolio").owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            pagination: false,
+            navigation: true
+        });
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            show_title: true,
+            social_tools: false
+        });
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        show_title: true,
-        social_tools: false
-    });
-});
 </script>

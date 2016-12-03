@@ -8,9 +8,11 @@ pageClass: .nav-stands
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="breadcrumb">
-                <li><a href="/">Home</a>
+                <li>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="/stands/">Splitting Stands</a>
+                <li>
+                    <a href="/stands/">Splitting Stands</a>
                 </li>
                 <li>{{ page.title }}</li>
             </ul>
@@ -22,7 +24,6 @@ pageClass: .nav-stands
     <!-- end container -->
 </section>
 <!-- end post-wrapper-top -->
-
 <section class="section-single">
     <div class="container">
         <div class="single-post-wrapper col-lg-9 col-md-9 col-sm-12 clearfix">
@@ -93,15 +94,12 @@ pageClass: .nav-stands
                         <h3>{{ page.title }}</h3>
                         <hr>
                     </div>
-
                     <p>These pictures are for a new stand (New for 2014) that I have designed for the smaller Farmall tractors, like the Farmall CUB, CUB LoBoy, Farmall A, Farmall B, and Farmall C, series of tractors. These small tractors do not have a frame rail and the stand gets bolted to the oil pan rail of the engine. I'm calling the stand the "Mini-stand" Each 4 inch wheel of the Mini stand contains a roller bearing making the tractor very easy to split.</p>
-
                     <div class="price">
                         <span class="price-new">{{ site.data.prices.front-stand-mini }}</span>
                     </div>
                     <br>
                     <a class="btn btn-primary" href="/contact/"><i class="fa fa-envelope-o"></i> CONTACT ME TO PURCHASE</a>
-
                     <div class="clearfix"></div>
                 </div>
                 <!-- end col-lg-4 -->
@@ -109,27 +107,24 @@ pageClass: .nav-stands
             <!-- end row -->
         </div>
         <!-- single-post-wrapper -->
-
     </div>
     <!-- end container -->
 </section>
 <!-- end section-single -->
-
-
 <!-- Owl Carousel script files -->
 <script src="/js/owl.carousel.js"></script>
 <script src="/js/jquery.prettyPhoto.js"></script>
 <script>
-$(document).ready(function() {
-    $("#owl-portfolio").owlCarousel({
-        items: 3,
-        lazyLoad: true,
-        pagination: false,
-        navigation: true
+    $(document).ready(function () {
+        $("#owl-portfolio").owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            pagination: false,
+            navigation: true
+        });
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            show_title: true,
+            social_tools: false
+        });
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        show_title: true,
-        social_tools: false
-    });
-});
 </script>
