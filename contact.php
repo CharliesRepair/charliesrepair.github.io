@@ -12,9 +12,10 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name     = $_POST['name'];
 $email    = $_POST['email'];
 $phone   = $_POST['phone'];
+$blah   = $_POST['blah'];
 $subject  = $_POST['subject'];
 $comments = $_POST['comments'];
-$verify   = $_POST['verify'];
+//$verify   = $_POST['verify'];
 
 if(trim($name) == '') {
 	echo '<div class="error_message">Attention! You must enter your name.</div>';
@@ -25,10 +26,10 @@ if(trim($name) == '') {
 } else if(trim($phone) == '') {
 	echo '<div class="error_message">Attention! Please enter a valid phone number.</div>';
 	exit();
-} else if(!is_numeric($phone)) {
+} /*else if(!is_numeric($phone)) {
 	echo '<div class="error_message">Attention! Phone number can only contain digits.</div>';
 	exit();
-} else if(!isEmail($email)) {
+}*/ else if(!isEmail($email)) {
 	echo '<div class="error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
 	exit();
 }
@@ -39,11 +40,16 @@ if(trim($subject) == '') {
 } else if(trim($comments) == '') {
 	echo '<div class="error_message">Attention! Please enter your message.</div>';
 	exit();
-} else if(!isset($verify) || trim($verify) == '') {
+} /*else if(!isset($verify) || trim($verify) == '') {
 	echo '<div class="error_message">Attention! Please enter the verification number.</div>';
 	exit();
 } else if(trim($verify) != '4') {
 	echo '<div class="error_message">Attention! The verification number you entered is incorrect.</div>';
+	exit();
+}*/
+
+if ($blah != '') {
+	echo '<div class="error_message">There is an issue the the form. Please refresh and try again.</div>';
 	exit();
 }
 
