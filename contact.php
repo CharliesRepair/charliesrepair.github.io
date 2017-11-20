@@ -116,6 +116,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo 'ERROR!';
 
 }
+?>
 
 <script type="text/javascript">
     var _gaq = _gaq || [];
